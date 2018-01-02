@@ -11,18 +11,24 @@ const app = next({
 });
 const handle = app.getRequestHandler();
 
+// Require env files
+require('dotenv').config({ path: '.env' }); //eslint-disable-line
+
 co(function* build() {
   yield app.prepare();
 
+  // Create a new server
   const server = express();
 
+  // Allow json requests and use /api for the api
   server.use(bodyParser.json());
   server.use('/api', api);
 
+  // Handle other requests using next
   server.get('*', (req, res) => handle(req, res));
 
   const PORT = process.env.PORT || 3000;
 
-  server.listen(PORT);
-  console.log(`express-mongo-next-boilerplate listening on ${PORT}`);
+  // Listen on the port
+  server.listen(PORT, () => console.log(`rhino listening on ${PORT}`));
 }).catch(err => console.error(err));

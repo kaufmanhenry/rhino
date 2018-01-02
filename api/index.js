@@ -2,6 +2,7 @@ const { Router } = require('express');
 
 const router = Router();
 
-router.get('/', (req, res) => res.send('BACKEND'));
+router.use('/auth', require('./routes/auth.route'));
+router.use('/users', require('./routes/user.route'));
 
 module.exports = router;
