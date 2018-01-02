@@ -19,7 +19,10 @@
     "mongoose": "5.0.0-rc0",
     "next": "4.2.1",
     "react": "16.2.0",
-    "react-dom": "16.2.0"
+    "react-dom": "16.2.0",
+    "react-redux": "5.0.6",
+    "redux": "3.7.2",
+    "redux-thunk": "2.2.0"
   },
   "devDependencies": {
     "babel-eslint": "8.1.2",

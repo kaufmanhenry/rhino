@@ -2,15 +2,15 @@ const Mongo = require('./index');
 const mongoose = require('mongoose');
 
 const UserModel = Mongo.model('User', new mongoose.Schema({
-  firstName: {
-    type: String,
-    required: true
-  },
-  lastName: {
+  name: {
     type: String,
     required: true
   },
   email: {
+    type: String,
+    required: true
+  },
+  passwordHash: {
     type: String,
     required: true
   }
