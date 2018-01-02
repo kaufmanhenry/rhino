@@ -7,7 +7,8 @@ const api = require('./api');
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({
-  dev
+  dev,
+  dir: './frontend'
 });
 const handle = app.getRequestHandler();
 

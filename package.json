@@ -6,7 +6,7 @@
   "author": "Henry Kaufman <hkaufman19@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
+    "start": "NODE_ENV=production node index.js",
     "dev": "nodemon index.js"
   },
   "dependencies": {
