@@ -1,10 +1,11 @@
-# express-mongo-next-boilerplate
+# :rhinoceros: rhino
 
 A boilerplate designed to help scaffold out applications that use Express, Mongoose, and Next.js.
 
 ## Installation
 
-1. Clone the repo and `cd` into it. `git clone https://github.com/hcjk/express-mongo-next-boilerplate && cd express-mongo-next-boilerplate`
+1. `git clone https://github.com/hcjk/rhino`
+2. `cd rhino`
 2. `yarn`
 3. `yarn start`
 
